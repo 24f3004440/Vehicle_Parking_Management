@@ -8,6 +8,7 @@ from routes.auth import auth_bp
 from routes.parking import parking_bp
 
 
+
 def create_app():
 
     app = Flask(__name__)
