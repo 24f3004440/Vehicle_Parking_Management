@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Login - ParkEasy{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center align-items-center login-container">
+
+    <div class="col-md-5 col-lg-4">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-4">
+
+                <div class="text-center mb-4">
+                    <div class="parking-icon">🚗</div>
+
+                    <h3 class="fw-bold mt-2">
+                        Welcome Back
+                    </h3>
+
+                    <p class="text-muted">
+                        Login to manage your parking
+                    </p>
+                </div>
+
+
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-100 py-2">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <div class="text-center mt-4">
+
+                    <p class="text-muted mb-2">
+                        Don't have an account?
+                    </p>
+
+                    <a
+                        href="{{ url_for('auth.register') }}"
+                        class="btn btn-outline-primary w-100">
+                        Register Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

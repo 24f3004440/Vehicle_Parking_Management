@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f7fb;
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 75vh;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.parking-icon {
+    font-size: 50px;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border-radius: 12px;
+
+    font-size: 24px;
+}
+
+.parking-slot {
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    border: 2px solid #e9ecef;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.parking-slot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.parking-slot.available {
+    border-color: #198754;
+}
+
+.parking-slot.occupied {
+    border-color: #dc3545;
+}
+
+.slot-number {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.slot-status {
+    font-size: 14px;
+    font-weight: 600;
+}
